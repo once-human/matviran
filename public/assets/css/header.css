@@ -1,160 +1,166 @@
-/* Reset */
+/* Reset margin and padding for all elements */
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 /* Header styling */
 header {
-    width: 100%;
-    background: linear-gradient(135deg, #007BFF, #0056b3); /* Updated gradient for better visibility */
-    position: sticky;
-    top: 0;
-    z-index: 1000;
-    transition: background 0.3s ease, box-shadow 0.3s ease;
-    backdrop-filter: blur(8px); /* Slightly reduced blur for better readability */
+  width: 100%;
+  background: #f8f9fa; /* Light background color for the header */
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  transition: background 0.3s ease, box-shadow 0.3s ease;
+  border-bottom: 1px solid #e0e0e0; /* Subtle border for modern look */
 }
 
-/* Navbar */
+/* Navbar styling */
 .navbar {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 15px 20px; /* Adjusted padding for better spacing */
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    position: relative;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 15px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
 }
 
-/* Logo */
+/* Logo styling */
 .logo a {
-    font-size: 2rem;
-    font-weight: bold;
-    color: #fff;
-    text-decoration: none;
-    letter-spacing: 1px;
-    transition: color 0.3s ease;
-}
-
-/* Menu Toggle */
-.menu-toggle {
-    display: none;
-    cursor: pointer;
-    position: relative;
-    z-index: 2000;
-}
-
-.menu-toggle .bar {
-    width: 30px;
-    height: 3px;
-    background-color: #fff;
-    margin: 6px 0;
-    transition: transform 0.3s ease, opacity 0.3s ease;
+  font-size: 2rem;
+  font-weight: bold;
+  color: #333; /* Dark color for the logo */
+  text-decoration: none;
+  letter-spacing: 1px;
+  transition: color 0.3s ease;
 }
 
 /* Navbar Links */
 .nav-links {
-    display: flex;
-    list-style: none;
-    align-items: center;
+  display: flex;
+  list-style: none;
+  align-items: center;
 }
 
 .nav-links li {
-    position: relative;
-    margin-left: 20px; /* Adjusted margin for better spacing */
+  margin-left: 20px;
+  position: relative;
 }
 
+/* Dropdown Menu */
+.dropdown {
+  position: relative;
+}
+
+.dropdown-menu {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background: #fff; /* White background for the submenu */
+  border: 1px solid #e0e0e0; /* Border for submenu */
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2); /* Shadow for submenu */
+  list-style: none;
+  padding: 10px 20px;
+  margin-top: 5px;
+  width: 250px; /* Fixed width for better layout */
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s ease, visibility 0.3s ease, transform 0.3s ease;
+  transform: translateY(10px);
+  z-index: 1000;
+}
+
+.dropdown-menu li {
+  margin: 0;
+}
+
+.dropdown-menu .nav-item {
+  display: block;
+  padding: 10px;
+  text-decoration: none;
+  color: #333; /* Dark color for submenu links */
+  font-size: 1rem;
+  transition: color 0.3s ease;
+}
+
+.dropdown-menu .nav-item:hover {
+  color: #e67e22; /* Subtle orange color for hover */
+}
+
+/* Show dropdown on hover */
+.nav-links li:hover .dropdown-menu {
+  display: block;
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+}
+
+/* Dropdown icon */
+.dropdown-icon {
+  font-size: 0.8rem;
+  margin-left: 5px;
+  vertical-align: middle;
+  transition: transform 0.3s ease;
+}
+
+/* Rotate the icon when the menu is visible */
+.dropdown:hover .dropdown-icon {
+  transform: rotate(180deg);
+}
+
+/* Styling for nav items */
 .nav-item {
-    text-decoration: none;
-    color: #fff;
-    font-size: 1.2rem;
-    font-weight: 500;
-    position: relative;
-    transition: color 0.3s ease, transform 0.3s ease;
+  text-decoration: none;
+  color: #333; /* Dark color for the links */
+  font-size: 1.2rem;
+  font-weight: 500;
+  position: relative;
+  transition: color 0.3s ease, transform 0.3s ease;
 }
 
 .nav-item::before {
-    content: '';
-    display: block;
-    height: 2px;
-    width: 0;
-    background-color: #ff6f61; /* Updated underline color */
-    transition: width 0.3s ease;
-    position: absolute;
-    bottom: -5px;
-    left: 0;
+  content: "";
+  display: block;
+  height: 2px;
+  width: 0;
+  background-color: #e67e22; /* Subtle orange color for underline effect */
+  transition: width 0.3s ease;
+  position: absolute;
+  bottom: -5px;
+  left: 0;
 }
 
 .nav-item:hover {
-    color: #ff6f61; /* Updated hover color */
-    transform: translateY(-2px); /* Reduced floating effect for subtlety */
+  color: #e67e22; /* Subtle orange color for hover */
+  transform: translateY(-2px); /* Slight lifting effect on hover */
 }
 
 .nav-item:hover::before {
-    width: 100%;
-}
-
-/* Mobile Menu Styling */
-.menu-toggle.open .bar:nth-child(1) {
-    transform: rotate(45deg) translate(5px, 5px);
-}
-
-.menu-toggle.open .bar:nth-child(2) {
-    opacity: 0;
-}
-
-.menu-toggle.open .bar:nth-child(3) {
-    transform: rotate(-45deg) translate(6px, -6px);
-}
-
-/* Mobile Menu Styling */
-.nav-links {
-    position: fixed; /* Changed to fixed for proper overlay */
-    top: 60px;
-    left: 0;
-    width: 100%;
-    height: calc(100vh - 60px);
-    background: rgba(0, 0, 0, 0.8); /* Slightly less dark background */
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    transform: translateY(-100%);
-    transition: transform 0.3s ease;
-    z-index: 999; /* Ensure it sits above other content */
-}
-
-.nav-links.active {
-    transform: translateY(0);
-}
-
-.nav-links li {
-    margin: 20px 0;
-}
-
-.nav-links .nav-item {
-    font-size: 1.5rem;
-    color: #fff; /* Ensure text is visible */
-    text-decoration: none; /* Remove underline */
+  width: 100%;
 }
 
 /* Sticky Header Animation */
 header.scrolled {
-    background: linear-gradient(135deg, #003d79, #0056b3); /* Darker gradient for scroll effect */
-    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2); /* Slightly reduced shadow for a subtler effect */
+  background: rgba(255, 255, 255, 0.9); /* Light glassmorphism effect */
+  backdrop-filter: blur(10px); /* Glassmorphism effect */
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2); /* Shadow for depth */
 }
 
-/* Ensure header and mobile menu have enough contrast */
-header, .nav-links {
-    color: #fff; /* Consistent text color */
+/* Ensure color consistency */
+header,
+.nav-links {
+  color: #333; /* Consistent text color */
 }
 
-header .logo a, .nav-links .nav-item {
-    color: #fff; /* Ensure text remains white */
+header .logo a,
+.nav-links .nav-item {
+  color: #333; /* Ensure text remains dark */
 }
 
-header .logo a:hover, .nav-links .nav-item:hover {
-    color: #ff6f61; /* Hover color for better visibility */
+header .logo a:hover,
+.nav-links .nav-item:hover {
+  color: #e67e22; /* Hover color for better visibility */
 }
-
