@@ -35,8 +35,8 @@ switch ($request) {
         require __DIR__ . '/public/terms.php';
         break;
     default:
-        // Optionally, handle 404 error
+        // Redirect to custom 404 page
         http_response_code(404);
-        echo "Page not found";
+        require __DIR__ . '/src/templates/404.php'; 
         break;
 }
