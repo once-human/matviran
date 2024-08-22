@@ -108,18 +108,21 @@ header {
     transform: rotate(-45deg) translate(6px, -6px);
 }
 
+/* Mobile Menu Styling */
 .nav-links {
-    position: absolute;
+    position: fixed; /* Changed to fixed for proper overlay */
     top: 60px;
     left: 0;
     width: 100%;
     height: calc(100vh - 60px);
-    background: rgba(0, 0, 0, 0.9); /* Slightly darker background for better contrast */
+    background: rgba(0, 0, 0, 0.8); /* Slightly less dark background */
+    display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     transform: translateY(-100%);
     transition: transform 0.3s ease;
+    z-index: 999; /* Ensure it sits above other content */
 }
 
 .nav-links.active {
@@ -132,10 +135,26 @@ header {
 
 .nav-links .nav-item {
     font-size: 1.5rem;
+    color: #fff; /* Ensure text is visible */
+    text-decoration: none; /* Remove underline */
 }
 
 /* Sticky Header Animation */
 header.scrolled {
-    background: linear-gradient(135deg, #0056b3, #003d79); /* Adjusted gradient for scrolled state */
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+    background: linear-gradient(135deg, #003d79, #0056b3); /* Darker gradient for scroll effect */
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2); /* Slightly reduced shadow for a subtler effect */
 }
+
+/* Ensure header and mobile menu have enough contrast */
+header, .nav-links {
+    color: #fff; /* Consistent text color */
+}
+
+header .logo a, .nav-links .nav-item {
+    color: #fff; /* Ensure text remains white */
+}
+
+header .logo a:hover, .nav-links .nav-item:hover {
+    color: #ff6f61; /* Hover color for better visibility */
+}
+
