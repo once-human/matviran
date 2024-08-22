@@ -22,17 +22,6 @@ a:hover {
     color: #0056b3;
 }
 
-/* Header */
-header {
-    width: 100%;
-    background: linear-gradient(135deg, #0056b3, #007BFF); /* Example gradient */
-    position: sticky;
-    top: 0;
-    z-index: 1000;
-    transition: background 0.3s ease, box-shadow 0.3s ease;
-    backdrop-filter: blur(10px); /* Glassmorphism effect */
-}
-
 /* Container */
 .container {
     max-width: 1200px;
