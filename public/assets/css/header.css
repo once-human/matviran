@@ -1,0 +1,106 @@
+/* Header styling */
+header {
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    background-color: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 2px solid rgba(255, 255, 255, 0.3);
+    border-radius: 12px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 8px;
+    margin-bottom: 20px;
+    width: 100%;
+}
+
+/* Header wrapper for centering content */
+.header-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px; 
+    margin: 0 auto; 
+    width: 100%;
+    box-sizing: border-box; 
+}
+
+/* Logo styles */
+.logo img {
+    width: 200px;
+    height: 60px;
+}
+
+/* Navigation styles */
+nav ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    margin-right: 10px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: black;
+    font-size: 16px;
+    padding: 8px 16px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+nav ul li a:hover {
+    background-color: rgba(0, 123, 255, 0.1);
+    color: #007BFF;
+    border-radius: 8px;
+}
+
+/* Add active class for the currently active page */
+nav ul li a.active {
+    background-color: #007BFF;
+    color: white;
+    border-radius: 8px;
+}
+
+/* Dropdown container */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: white;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    z-index: 1;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown-content a {
+    display: block;
+    padding: 10px 16px;
+    text-decoration: none;
+    color: black;
+    border-bottom: 1px solid #ddd;
+}
+
+.dropdown-content a:hover {
+    background-color: rgba(0, 123, 255, 0.1);
+    color: #007BFF;
+}
+
+.dropdown-content a:last-child {
+    border-bottom: none;
+}

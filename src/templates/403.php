@@ -3,7 +3,7 @@
 
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-    <title> 403 Test Forbidden
+    <title> 403 Forbidden
     </title>
     <style>
         @media (prefers-color-scheme:dark) {
