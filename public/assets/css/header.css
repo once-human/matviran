@@ -1,4 +1,4 @@
-/* Reset */
+/* Reset margin and padding for all elements */
 * {
     margin: 0;
     padding: 0;
@@ -8,26 +8,25 @@
 /* Header styling */
 header {
     width: 100%;
-    background: linear-gradient(135deg, #007BFF, #0056b3); /* Updated gradient for better visibility */
+    background: #007BFF; /* Solid background color for visibility */
     position: sticky;
     top: 0;
     z-index: 1000;
     transition: background 0.3s ease, box-shadow 0.3s ease;
-    backdrop-filter: blur(8px); /* Slightly reduced blur for better readability */
 }
 
-/* Navbar */
+/* Navbar styling */
 .navbar {
     max-width: 1200px;
     margin: 0 auto;
-    padding: 15px 20px; /* Adjusted padding for better spacing */
+    padding: 15px 20px;
     display: flex;
     justify-content: space-between;
     align-items: center;
     position: relative;
 }
 
-/* Logo */
+/* Logo styling */
 .logo a {
     font-size: 2rem;
     font-weight: bold;
@@ -37,7 +36,7 @@ header {
     transition: color 0.3s ease;
 }
 
-/* Menu Toggle */
+/* Menu Toggle Button */
 .menu-toggle {
     display: none;
     cursor: pointer;
@@ -61,8 +60,7 @@ header {
 }
 
 .nav-links li {
-    position: relative;
-    margin-left: 20px; /* Adjusted margin for better spacing */
+    margin-left: 20px;
 }
 
 .nav-item {
@@ -79,7 +77,7 @@ header {
     display: block;
     height: 2px;
     width: 0;
-    background-color: #ff6f61; /* Updated underline color */
+    background-color: #ff6f61; /* Color for underline effect */
     transition: width 0.3s ease;
     position: absolute;
     bottom: -5px;
@@ -87,8 +85,8 @@ header {
 }
 
 .nav-item:hover {
-    color: #ff6f61; /* Updated hover color */
-    transform: translateY(-2px); /* Reduced floating effect for subtlety */
+    color: #ff6f61;
+    transform: translateY(-2px); /* Slight lifting effect on hover */
 }
 
 .nav-item:hover::before {
@@ -96,33 +94,23 @@ header {
 }
 
 /* Mobile Menu Styling */
-.menu-toggle.open .bar:nth-child(1) {
-    transform: rotate(45deg) translate(5px, 5px);
+.menu-toggle {
+    display: block; /* Show menu toggle button on mobile */
 }
 
-.menu-toggle.open .bar:nth-child(2) {
-    opacity: 0;
-}
-
-.menu-toggle.open .bar:nth-child(3) {
-    transform: rotate(-45deg) translate(6px, -6px);
-}
-
-/* Mobile Menu Styling */
 .nav-links {
-    position: fixed; /* Changed to fixed for proper overlay */
+    position: fixed; /* Fixed position for mobile menu overlay */
     top: 60px;
     left: 0;
     width: 100%;
     height: calc(100vh - 60px);
-    background: rgba(0, 0, 0, 0.8); /* Slightly less dark background */
-    display: flex;
+    background: rgba(0, 0, 0, 0.9); /* Dark background for better contrast */
     flex-direction: column;
     align-items: center;
     justify-content: center;
     transform: translateY(-100%);
     transition: transform 0.3s ease;
-    z-index: 999; /* Ensure it sits above other content */
+    z-index: 999;
 }
 
 .nav-links.active {
@@ -135,26 +123,23 @@ header {
 
 .nav-links .nav-item {
     font-size: 1.5rem;
-    color: #fff; /* Ensure text is visible */
-    text-decoration: none; /* Remove underline */
 }
 
 /* Sticky Header Animation */
 header.scrolled {
-    background: linear-gradient(135deg, #003d79, #0056b3); /* Darker gradient for scroll effect */
-    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2); /* Slightly reduced shadow for a subtler effect */
+    background: #0056b3; /* Darker background on scroll */
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
 }
 
-/* Ensure header and mobile menu have enough contrast */
+/* Ensuring color consistency */
 header, .nav-links {
-    color: #fff; /* Consistent text color */
+    color: #fff;
 }
 
 header .logo a, .nav-links .nav-item {
-    color: #fff; /* Ensure text remains white */
+    color: #fff;
 }
 
 header .logo a:hover, .nav-links .nav-item:hover {
-    color: #ff6f61; /* Hover color for better visibility */
+    color: #ff6f61; /* Hover color */
 }
-
