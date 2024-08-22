@@ -8,24 +8,26 @@
 /* Header styling */
 header {
     width: 100%;
-    background: linear-gradient(135deg, #0056b3, #007BFF); /* Professional gradient */
+    background: linear-gradient(135deg, #007BFF, #0056b3); /* Updated gradient for better visibility */
     position: sticky;
     top: 0;
     z-index: 1000;
     transition: background 0.3s ease, box-shadow 0.3s ease;
-    backdrop-filter: blur(10px); /* Glassmorphism effect */
+    backdrop-filter: blur(8px); /* Slightly reduced blur for better readability */
 }
 
+/* Navbar */
 .navbar {
     max-width: 1200px;
     margin: 0 auto;
-    padding: 15px 30px;
+    padding: 15px 20px; /* Adjusted padding for better spacing */
     display: flex;
     justify-content: space-between;
     align-items: center;
     position: relative;
 }
 
+/* Logo */
 .logo a {
     font-size: 2rem;
     font-weight: bold;
@@ -35,6 +37,7 @@ header {
     transition: color 0.3s ease;
 }
 
+/* Menu Toggle */
 .menu-toggle {
     display: none;
     cursor: pointer;
@@ -50,7 +53,7 @@ header {
     transition: transform 0.3s ease, opacity 0.3s ease;
 }
 
-/* Navbar styling */
+/* Navbar Links */
 .nav-links {
     display: flex;
     list-style: none;
@@ -59,7 +62,7 @@ header {
 
 .nav-links li {
     position: relative;
-    margin-left: 30px;
+    margin-left: 20px; /* Adjusted margin for better spacing */
 }
 
 .nav-item {
@@ -76,7 +79,7 @@ header {
     display: block;
     height: 2px;
     width: 0;
-    background-color: #fff;
+    background-color: #ff6f61; /* Updated underline color */
     transition: width 0.3s ease;
     position: absolute;
     bottom: -5px;
@@ -84,15 +87,15 @@ header {
 }
 
 .nav-item:hover {
-    color: #ff6f61;
-    transform: translateY(-4px); /* Floating effect */
+    color: #ff6f61; /* Updated hover color */
+    transform: translateY(-2px); /* Reduced floating effect for subtlety */
 }
 
 .nav-item:hover::before {
     width: 100%;
 }
 
-/* Mobile menu styling */
+/* Mobile Menu Styling */
 .menu-toggle.open .bar:nth-child(1) {
     transform: rotate(45deg) translate(5px, 5px);
 }
@@ -111,7 +114,7 @@ header {
     left: 0;
     width: 100%;
     height: calc(100vh - 60px);
-    background: rgba(0, 0, 0, 0.8);
+    background: rgba(0, 0, 0, 0.9); /* Slightly darker background for better contrast */
     flex-direction: column;
     align-items: center;
     justify-content: center;
@@ -133,6 +136,6 @@ header {
 
 /* Sticky Header Animation */
 header.scrolled {
-    background: linear-gradient(135deg, #003d79, #0056b3); /* Darker gradient on scroll */
+    background: linear-gradient(135deg, #0056b3, #003d79); /* Adjusted gradient for scrolled state */
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
 }
