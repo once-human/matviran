@@ -26,14 +26,14 @@
                 <li><a href="/services" class="nav-item">Services</a></li>
                 <li><a href="/portfolio" class="nav-item">Portfolio</a></li>
                 <li class="dropdown">
-                    <a href="#" class="nav-item">About Us <span class="dropdown-icon">▼</span></a>
+                    <a href="#" class="nav-item">About Us <span class="dropdown-icon">&#9662;</span></a>
                     <ul class="dropdown-menu">
                         <li><a href="/our-story" class="nav-item">Our Story</a></li>
                         <li><a href="/team" class="nav-item">Meet the Team</a></li>
                     </ul>
                 </li>
                 <li class="dropdown">
-                    <a href="#" class="nav-item">Contact <span class="dropdown-icon">▼</span></a>
+                    <a href="#" class="nav-item">Contact <span class="dropdown-icon">&#9662;</span></a>
                     <ul class="dropdown-menu">
                         <li><a href="/faqs" class="nav-item">FAQ</a></li>
                     </ul>
