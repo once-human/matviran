@@ -1,162 +1,166 @@
 /* Reset margin and padding for all elements */
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 /* Header styling */
 header {
-    width: 100%;
-    background: #f8f9fa; /* Light background color for the header */
-    position: sticky;
-    top: 0;
-    z-index: 1000;
-    transition: background 0.3s ease, box-shadow 0.3s ease;
-    border-bottom: 1px solid #e0e0e0; /* Subtle border for modern look */
+  width: 100%;
+  background: #f8f9fa; /* Light background color for the header */
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  transition: background 0.3s ease, box-shadow 0.3s ease;
+  border-bottom: 1px solid #e0e0e0; /* Subtle border for modern look */
 }
 
 /* Navbar styling */
 .navbar {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 15px 20px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    position: relative;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 15px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
 }
 
 /* Logo styling */
 .logo a {
-    font-size: 2rem;
-    font-weight: bold;
-    color: #333; /* Dark color for the logo */
-    text-decoration: none;
-    letter-spacing: 1px;
-    transition: color 0.3s ease;
+  font-size: 2rem;
+  font-weight: bold;
+  color: #333; /* Dark color for the logo */
+  text-decoration: none;
+  letter-spacing: 1px;
+  transition: color 0.3s ease;
 }
 
 /* Navbar Links */
 .nav-links {
-    display: flex;
-    list-style: none;
-    align-items: center;
+  display: flex;
+  list-style: none;
+  align-items: center;
 }
 
 .nav-links li {
-    margin-left: 20px;
-    position: relative;
+  margin-left: 20px;
+  position: relative;
 }
 
 /* Dropdown Menu */
 .dropdown {
-    position: relative;
+  position: relative;
 }
 
 .dropdown-menu {
-    display: none;
-    position: absolute;
-    top: 100%;
-    left: 0;
-    background: #fff; /* White background for the submenu */
-    border: 1px solid #e0e0e0; /* Border for submenu */
-    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2); /* Shadow for submenu */
-    list-style: none;
-    padding: 10px;
-    margin-top: 5px;
-    width: 200px; /* Fixed width for better layout */
-    opacity: 0;
-    visibility: hidden;
-    transition: opacity 0.3s ease, visibility 0.3s ease, transform 0.3s ease;
-    transform: translateY(10px);
-    z-index: 1000;
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background: #fff; /* White background for the submenu */
+  border: 1px solid #e0e0e0; /* Border for submenu */
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2); /* Shadow for submenu */
+  list-style: none;
+  padding: 10px 20px;
+  margin-top: 5px;
+  width: 250px; /* Fixed width for better layout */
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s ease, visibility 0.3s ease, transform 0.3s ease;
+  transform: translateY(10px);
+  z-index: 1000;
 }
 
 .dropdown-menu li {
-    margin: 0;
+  margin: 0;
 }
 
 .dropdown-menu .nav-item {
-    display: block;
-    padding: 10px 20px;
-    text-decoration: none;
-    color: #333; /* Dark color for submenu links */
-    font-size: 1rem;
-    transition: color 0.3s ease;
+  display: block;
+  padding: 10px;
+  text-decoration: none;
+  color: #333; /* Dark color for submenu links */
+  font-size: 1rem;
+  transition: color 0.3s ease;
 }
 
 .dropdown-menu .nav-item:hover {
-    color: #e67e22; /* Subtle orange color for hover */
+  color: #e67e22; /* Subtle orange color for hover */
 }
 
 /* Show dropdown on hover */
 .nav-links li:hover .dropdown-menu {
-    display: block;
-    opacity: 1;
-    visibility: visible;
-    transform: translateY(0);
+  display: block;
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
 }
 
 /* Dropdown icon */
 .dropdown-icon {
-    font-size: 0.8rem;
-    margin-left: 5px;
-    transition: transform 0.3s ease;
+  font-size: 0.8rem;
+  margin-left: 5px;
+  vertical-align: middle;
+  transition: transform 0.3s ease;
 }
 
 /* Rotate the icon when the menu is visible */
 .dropdown:hover .dropdown-icon {
-    transform: rotate(180deg);
+  transform: rotate(180deg);
 }
 
 /* Styling for nav items */
 .nav-item {
-    text-decoration: none;
-    color: #333; /* Dark color for the links */
-    font-size: 1.2rem;
-    font-weight: 500;
-    position: relative;
-    transition: color 0.3s ease, transform 0.3s ease;
+  text-decoration: none;
+  color: #333; /* Dark color for the links */
+  font-size: 1.2rem;
+  font-weight: 500;
+  position: relative;
+  transition: color 0.3s ease, transform 0.3s ease;
 }
 
 .nav-item::before {
-    content: '';
-    display: block;
-    height: 2px;
-    width: 0;
-    background-color: #e67e22; /* Subtle orange color for underline effect */
-    transition: width 0.3s ease;
-    position: absolute;
-    bottom: -5px;
-    left: 0;
+  content: "";
+  display: block;
+  height: 2px;
+  width: 0;
+  background-color: #e67e22; /* Subtle orange color for underline effect */
+  transition: width 0.3s ease;
+  position: absolute;
+  bottom: -5px;
+  left: 0;
 }
 
 .nav-item:hover {
-    color: #e67e22; /* Subtle orange color for hover */
-    transform: translateY(-2px); /* Slight lifting effect on hover */
+  color: #e67e22; /* Subtle orange color for hover */
+  transform: translateY(-2px); /* Slight lifting effect on hover */
 }
 
 .nav-item:hover::before {
-    width: 100%;
+  width: 100%;
 }
 
 /* Sticky Header Animation */
 header.scrolled {
-    background: rgba(255, 255, 255, 0.9); /* Light glassmorphism effect */
-    backdrop-filter: blur(10px); /* Glassmorphism effect */
-    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2); /* Shadow for depth */
+  background: rgba(255, 255, 255, 0.9); /* Light glassmorphism effect */
+  backdrop-filter: blur(10px); /* Glassmorphism effect */
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2); /* Shadow for depth */
 }
 
 /* Ensure color consistency */
-header, .nav-links {
-    color: #333; /* Consistent text color */
+header,
+.nav-links {
+  color: #333; /* Consistent text color */
 }
 
-header .logo a, .nav-links .nav-item {
-    color: #333; /* Ensure text remains dark */
+header .logo a,
+.nav-links .nav-item {
+  color: #333; /* Ensure text remains dark */
 }
 
-header .logo a:hover, .nav-links .nav-item:hover {
-    color: #e67e22; /* Hover color for better visibility */
+header .logo a:hover,
+.nav-links .nav-item:hover {
+  color: #e67e22; /* Hover color for better visibility */
 }
