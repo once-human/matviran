@@ -59,11 +59,16 @@ header {
     position: absolute;
     top: 100%;
     left: 0;
-    background: #f8f9fa; /* Light background for the submenu */
+    background: #fff; /* White background for the submenu */
     border: 1px solid #e0e0e0; /* Border for submenu */
     box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2); /* Shadow for submenu */
     list-style: none;
     padding: 10px;
+    margin-top: 5px;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease, visibility 0.3s ease, transform 0.3s ease;
+    transform: translateY(10px);
     z-index: 1000;
 }
 
@@ -77,6 +82,7 @@ header {
     text-decoration: none;
     color: #333; /* Dark color for submenu links */
     font-size: 1rem;
+    transition: color 0.3s ease;
 }
 
 .dropdown-menu .nav-item:hover {
@@ -86,6 +92,21 @@ header {
 /* Show dropdown on hover */
 .nav-links li:hover .dropdown-menu {
     display: block;
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+}
+
+/* Dropdown icon */
+.dropdown-icon {
+    font-size: 0.8rem;
+    margin-left: 5px;
+    transition: transform 0.3s ease;
+}
+
+/* Rotate the icon when the menu is visible */
+.dropdown:hover .dropdown-icon {
+    transform: rotate(180deg);
 }
 
 /* Styling for nav items */
