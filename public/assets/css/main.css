@@ -5,14 +5,14 @@
 body {
     font-family: 'Inter', sans-serif;
     line-height: 1.6;
-    color: #333;
-    background-color: #f4f4f4;
+    /* color: #333;
+    background-color: #f4f4f4; */
     margin: 0;
     padding: 0;
 }
 
 /* Links */
-a {
+/* a {
     color: #007BFF;
     text-decoration: none;
     transition: color 0.3s ease;
@@ -20,14 +20,14 @@ a {
 
 a:hover {
     color: #0056b3;
-}
+} */
 
 /* Container */
-.container {
+/* .container {
     max-width: 1200px;
     margin: 0 auto;
     padding: 20px;
-}
+} */
 
 /* Headings */
 h1, h2, h3, h4, h5, h6 {
@@ -65,7 +65,7 @@ p {
 }
 
 /* Buttons */
-button {
+/* button {
     background-color: #007BFF;
     color: #fff;
     border: none;
@@ -78,7 +78,7 @@ button {
 
 button:hover {
     background-color: #0056b3;
-}
+} */
 
 /* Responsive Design */
 @media (max-width: 768px) {
