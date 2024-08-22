@@ -1,11 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title><?php echo $pageTitle; ?></title> <!-- Dynamically set page title -->
+    <link rel="stylesheet" href="/public/assets/css/main.css"> <!-- Main CSS -->
     <link rel="stylesheet" href="/public/assets/css/header.css"> <!-- Header CSS -->
 </head>
+
 <body>
     <header>
         <!-- Navbar Start -->
@@ -14,9 +17,9 @@
                 <a href="/home">Matviran</a>
             </div>
             <div class="menu-toggle" id="mobile-menu">
-                <span class="bar"></span>
-                <span class="bar"></span>
-                <span class="bar"></span>
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
             </div>
             <ul class="nav-links" id="nav-links">
                 <li><a href="/home" class="nav-item">Home</a></li>
@@ -33,4 +36,5 @@
     </header>
     <script src="/public/assets/js/header.js"></script> <!-- Header JS -->
 </body>
+
 </html>
