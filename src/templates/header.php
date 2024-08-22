@@ -25,11 +25,19 @@
                 <li><a href="/home" class="nav-item">Home</a></li>
                 <li><a href="/services" class="nav-item">Services</a></li>
                 <li><a href="/portfolio" class="nav-item">Portfolio</a></li>
-                <li><a href="/our-story" class="nav-item">Our Story</a></li>
-                <li><a href="/team" class="nav-item">Team</a></li>
-                <li><a href="/testimonials" class="nav-item">Testimonials</a></li>
-                <li><a href="/faqs" class="nav-item">FAQs</a></li>
-                <li><a href="/contact" class="nav-item">Contact</a></li>
+                <li class="dropdown">
+                    <a href="#" class="nav-item">About Us</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="/our-story" class="nav-item">Our Story</a></li>
+                        <li><a href="/team" class="nav-item">Meet the Team</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a href="#" class="nav-item">Contact</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="/faqs" class="nav-item">FAQ</a></li>
+                    </ul>
+                </li>
             </ul>
         </nav>
         <!-- Navbar End -->
