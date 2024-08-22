@@ -6,7 +6,7 @@
     <title>Document</title>
 </head>
 <body>
-    <h1>Hello Neeraj!</h1>
+    <h1>Auto Deploy dev branch!</h1>
     <p>Auto Server Deployment Test</p>
 </body>
 </html>
