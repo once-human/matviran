@@ -8,7 +8,8 @@
 </head>
 <body>
     <header>
-        <nav>
+        <!-- Navbar Start -->
+        <nav class="navbar">
             <div class="logo">
                 <a href="/home">Matviran</a>
             </div>
@@ -18,16 +19,17 @@
                 <span class="bar"></span>
             </div>
             <ul class="nav-links" id="nav-links">
-                <li><a href="/home">Home</a></li>
-                <li><a href="/services">Services</a></li>
-                <li><a href="/portfolio">Portfolio</a></li>
-                <li><a href="/our-story">Our Story</a></li>
-                <li><a href="/team">Team</a></li>
-                <li><a href="/testimonials">Testimonials</a></li>
-                <li><a href="/faqs">FAQs</a></li>
-                <li><a href="/contact">Contact</a></li>
+                <li><a href="/home" class="nav-item">Home</a></li>
+                <li><a href="/services" class="nav-item">Services</a></li>
+                <li><a href="/portfolio" class="nav-item">Portfolio</a></li>
+                <li><a href="/our-story" class="nav-item">Our Story</a></li>
+                <li><a href="/team" class="nav-item">Team</a></li>
+                <li><a href="/testimonials" class="nav-item">Testimonials</a></li>
+                <li><a href="/faqs" class="nav-item">FAQs</a></li>
+                <li><a href="/contact" class="nav-item">Contact</a></li>
             </ul>
         </nav>
+        <!-- Navbar End -->
     </header>
     <script src="/public/assets/js/header.js"></script> <!-- Header JS -->
 </body>
