@@ -1,50 +1,48 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title><?php echo $pageTitle; ?></title> <!-- Dynamically set page title -->
-    <link rel="stylesheet" href="/public/assets/css/main.css"> <!-- Main CSS -->
-    <link rel="stylesheet" href="/public/assets/css/header.css"> <!-- Header CSS -->
+    <title>Your Website</title>
+    <link rel="stylesheet" href="header.scss">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/EasePack.min.js"></script>
 </head>
-
 <body>
-    <header>
-        <!-- Navbar Start -->
+    <header class="site-header">
         <nav class="navbar">
             <div class="logo">
-                <a href="/home">Matviran</a>
+                <a href="#">YourLogo</a>
             </div>
-            <div class="menu-toggle" id="mobile-menu">
-                <div class="bar"></div>
-                <div class="bar"></div>
-                <div class="bar"></div>
-            </div>
-            <ul class="nav-links" id="nav-links">
-                <li><a href="/home" class="nav-item">Home</a></li>
-                <li><a href="/services" class="nav-item">Services</a></li>
-                <li><a href="/portfolio" class="nav-item">Portfolio</a></li>
-                <li class="dropdown">
-                    <a href="#" class="nav-item">About Us <svg class="dropdown-icon" xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24"><path d="M7.41 8.59L12 13.17l4.59-4.58L18 9l-6 6-6-6z"/></svg></a>
-                    <ul class="dropdown-menu">
-                        <li><a href="/our-story" class="nav-item">Our Story</a></li>
-                        <li><a href="/team" class="nav-item">Meet the Team</a></li>
-                    </ul>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <!-- Dashboard Button -->
+                <li>
+                    <div class="button--bubble__container">
+                        <a href="#dashboard" class="button button--bubble">
+                            Dashboard
+                        </a>
+                        <span class="button--bubble__effect-container">
+                            <span class="circle top-left"></span>
+                            <span class="circle top-left"></span>
+                            <span class="circle top-left"></span>
+                            <span class="button effect-button"></span>
+                            <span class="circle bottom-right"></span>
+                            <span class="circle bottom-right"></span>
+                            <span class="circle bottom-right"></span>
+                        </span>
+                    </div>
                 </li>
-                <li class="dropdown">
-                    <a href="#" class="nav-item">Contact <svg class="dropdown-icon" xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24"><path d="M7.41 8.59L12 13.17l4.59-4.58L18 9l-6 6-6-6z"/></svg></a>
-                    <ul class="dropdown-menu">
-                        <li><a href="/faqs" class="nav-item">FAQ</a></li>
-                    </ul>
-                </li>
-                <!-- Highlighted Dashboard Button -->
-                <li><a href="https://client.matviran.com" class="nav-item dashboard-btn">Dashboard</a></li>
             </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
         </nav>
-        <!-- Navbar End -->
     </header>
-    <script src="/public/assets/js/header.js"></script> <!-- Header JS -->
+    <script src="header.js"></script>
 </body>
-
 </html>
