@@ -7,14 +7,14 @@
   <meta content="Matviran provides stunning websites for small businesses, handling everything from design and development to hosting and indexing." name="description" />
   <meta content="Matviran - We Build, You Grow" property="og:title" />
   <meta content="Matviran provides stunning websites for small businesses, handling everything from design and development to hosting and indexing." property="og:description" />
-  <meta content="https://yourdomain.com/path-to-your-og-image.png" property="og:image" />
+  <meta content="https://cdn.prod.website-files.com/666d9a8012932ba246bcefba/66a4b08cd5d8947363d592ca_table-og-image.png" property="og:image" />
   <meta content="Matviran - We Build, You Grow" property="twitter:title" />
   <meta content="Matviran provides stunning websites for small businesses, handling everything from design and development to hosting and indexing." property="twitter:description" />
-  <meta content="https://yourdomain.com/path-to-your-og-image.png" property="twitter:image" />
+  <meta content="https://cdn.prod.website-files.com/666d9a8012932ba246bcefba/66a4b08cd5d8947363d592ca_table-og-image.png" property="twitter:image" />
   <meta property="og:type" content="website" />
   <meta content="summary_large_image" name="twitter:card" />
   <meta content="width=device-width, initial-scale=1" name="viewport" />
-  <link href="https://yourdomain.com/path-to-your-css-file.css" rel="stylesheet" type="text/css" />
+  <link href="https://cdn.prod.website-files.com/666d9a8012932ba246bcefba/css/table-staging.webflow.66d9b9195.min.css" rel="stylesheet" type="text/css" />
   <script type="text/javascript">
     !function(o, c) {
       var n = c.documentElement,
@@ -22,8 +22,8 @@
       n.className += t + "js", ("ontouchstart" in o || o.DocumentTouch && c instanceof DocumentTouch) && (n.className += t + "touch")
     }(window, document);
   </script>
-  <link href="https://yourdomain.com/path-to-your-favicon.png" rel="shortcut icon" type="image/x-icon" />
-  <link href="https://yourdomain.com/path-to-your-apple-touch-icon.png" rel="apple-touch-icon" />
+  <link href="https://cdn.prod.website-files.com/666d9a8012932ba246bcefba/66a4afce0bdca4a67a35f968_favicon.png" rel="shortcut icon" type="image/x-icon" />
+  <link href="https://cdn.prod.website-files.com/666d9a8012932ba246bcefba/66a4afcb7f78e27bf1f47f2a_favicon-big.png" rel="apple-touch-icon" />
   <!-- Keep this css code to improve the font quality -->
   <style>
     * {
@@ -32,7 +32,6 @@
       -o-font-smoothing: antialiased;
     }
   </style>
-
 
   <!-- Google Tag Manager -->
   <script>
