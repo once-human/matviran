@@ -8,7 +8,7 @@
 /* Header styling */
 header {
   width: 100%;
-  background: #f8f9fa; /* Light background color for the header */
+  background: #ffffff; /* White background for the header */
   position: sticky;
   top: 0;
   z-index: 1000;
@@ -24,16 +24,14 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  position: relative;
 }
 
 /* Logo styling */
 .logo a {
-  font-size: 2rem;
-  font-weight: bold;
-  color: #333; /* Dark color for the logo */
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: #222; /* Slightly darker color for the logo */
   text-decoration: none;
-  letter-spacing: 1px;
   transition: color 0.3s ease;
 }
 
@@ -50,19 +48,14 @@ header {
 }
 
 /* Dropdown Menu */
-.dropdown {
-  position: relative;
-}
-
 .dropdown-menu {
   display: none;
   position: absolute;
   top: 100%;
   left: 0;
-  background: #fff; /* White background for the submenu */
+  background: #ffffff; /* White background for the submenu */
   border: 1px solid #e0e0e0; /* Border for submenu */
   box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2); /* Shadow for submenu */
-  list-style: none;
   padding: 10px 20px;
   margin-top: 5px;
   width: 250px; /* Fixed width for better layout */
@@ -73,52 +66,22 @@ header {
   z-index: 1000;
 }
 
-.dropdown-menu li {
-  margin: 0;
-}
-
-.dropdown-menu .nav-item {
-  display: block;
-  padding: 10px;
-  text-decoration: none;
-  color: #333; /* Dark color for submenu links */
-  font-size: 1rem;
-  transition: color 0.3s ease;
-}
-
-.dropdown-menu .nav-item:hover {
-  color: #e67e22; /* Subtle orange color for hover */
-}
-
-/* Show dropdown on hover */
-.nav-links li:hover .dropdown-menu {
-  display: block;
-  opacity: 1;
-  visibility: visible;
-  transform: translateY(0);
-}
-
-/* Dropdown icon */
-.dropdown-icon {
-  font-size: 0.8rem;
-  margin-left: 5px;
-  vertical-align: middle;
-  transition: transform 0.3s ease;
-}
-
-/* Rotate the icon when the menu is visible */
-.dropdown:hover .dropdown-icon {
-  transform: rotate(180deg);
-}
-
-/* Styling for nav items */
 .nav-item {
-  text-decoration: none;
-  color: #333; /* Dark color for the links */
-  font-size: 1.2rem;
-  font-weight: 500;
-  position: relative;
+  color: #222; /* Darker shade for links */
+  font-size: 1rem;
+  font-weight: 600;
   transition: color 0.3s ease, transform 0.3s ease;
+}
+
+/* Sticky Header Animation */
+header.scrolled {
+  background: rgba(255, 255, 255, 0.9); /* Light glassmorphism effect */
+  backdrop-filter: blur(8px); /* Glassmorphism effect */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Softer shadow */
+}
+
+.nav-item:hover {
+  color: #007bff; /* Bright blue for hover */
 }
 
 .nav-item::before {
@@ -126,41 +89,63 @@ header {
   display: block;
   height: 2px;
   width: 0;
-  background-color: #e67e22; /* Subtle orange color for underline effect */
+  background-color: #007bff; /* Blue for underline effect */
   transition: width 0.3s ease;
   position: absolute;
   bottom: -5px;
   left: 0;
 }
 
-.nav-item:hover {
-  color: #e67e22; /* Subtle orange color for hover */
-  transform: translateY(-2px); /* Slight lifting effect on hover */
-}
-
 .nav-item:hover::before {
   width: 100%;
 }
 
-/* Sticky Header Animation */
-header.scrolled {
-  background: rgba(255, 255, 255, 0.9); /* Light glassmorphism effect */
-  backdrop-filter: blur(10px); /* Glassmorphism effect */
-  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2); /* Shadow for depth */
+/* Mobile Menu Styling */
+#mobile-menu {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
 }
 
-/* Ensure color consistency */
-header,
-.nav-links {
-  color: #333; /* Consistent text color */
+#mobile-menu.open .bar:nth-child(2) {
+  opacity: 0;
 }
 
-header .logo a,
-.nav-links .nav-item {
-  color: #333; /* Ensure text remains dark */
+#mobile-menu.open .bar:nth-child(1) {
+  transform: translateY(8px) rotate(45deg);
 }
 
-header .logo a:hover,
-.nav-links .nav-item:hover {
-  color: #e67e22; /* Hover color for better visibility */
+#mobile-menu.open .bar:nth-child(3) {
+  transform: translateY(-8px) rotate(-45deg);
+}
+
+/* Hamburger bars */
+.bar {
+  width: 25px;
+  height: 3px;
+  background-color: #333;
+  margin: 4px 0;
+  transition: all 0.3s ease;
+}
+
+/* Show mobile menu */
+@media (max-width: 768px) {
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    background-color: #fff;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    padding: 20px;
+  }
+
+  .nav-links.active {
+    display: flex;
+  }
+
+  #mobile-menu {
+    display: flex;
+  }
 }
