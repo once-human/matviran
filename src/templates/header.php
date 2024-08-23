@@ -7,6 +7,7 @@
     <title><?php echo $pageTitle; ?></title> <!-- Dynamically set page title -->
     <link rel="stylesheet" href="/public/assets/css/main.css"> <!-- Main CSS -->
     <link rel="stylesheet" href="/public/assets/css/header.css"> <!-- Header CSS -->
+    <link rel="stylesheet" href="/public/assets/css/header.scss"> <!-- Header SCSS -->
 </head>
 
 <body>
