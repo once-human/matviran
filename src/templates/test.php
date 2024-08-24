@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html data-wf-domain="www.usetable.ai" data-wf-page="666d9a8012932ba246bcf004" data-wf-site="666d9a8012932ba246bcefba">
+<html data-wf-domain="www.matviran.com" data-wf-page="your-page-id" data-wf-site="your-site-id">
 
 <head>
   <meta charset="utf-8" />
-  <title>Matviran - We build, You Grow</title>
+  <title>Matviran - We Build, You Grow</title>
   <meta content="Matviran provides stunning websites for small businesses, handling everything from design and development to hosting and indexing." name="description" />
   <meta content="Matviran - We Build, You Grow" property="og:title" />
   <meta content="Matviran provides stunning websites for small businesses, handling everything from design and development to hosting and indexing." property="og:description" />
@@ -16,14 +16,15 @@
   <meta content="width=device-width, initial-scale=1" name="viewport" />
   <link href="https://cdn.prod.website-files.com/666d9a8012932ba246bcefba/css/table-staging.webflow.66d9b9195.min.css" rel="stylesheet" type="text/css" />
   <script type="text/javascript">
-    ! function(o, c) {
+    !function(o, c) {
       var n = c.documentElement,
         t = " w-mod-";
       n.className += t + "js", ("ontouchstart" in o || o.DocumentTouch && c instanceof DocumentTouch) && (n.className += t + "touch")
     }(window, document);
   </script>
   <link href="https://cdn.prod.website-files.com/666d9a8012932ba246bcefba/66a4afce0bdca4a67a35f968_favicon.png" rel="shortcut icon" type="image/x-icon" />
-  <link href="https://cdn.prod.website-files.com/666d9a8012932ba246bcefba/66a4afcb7f78e27bf1f47f2a_favicon-big.png" rel="apple-touch-icon" /><!-- Keep this css code to improve the font quality-->
+  <link href="https://cdn.prod.website-files.com/666d9a8012932ba246bcefba/66a4afcb7f78e27bf1f47f2a_favicon-big.png" rel="apple-touch-icon" />
+  <!-- Keep this css code to improve the font quality -->
   <style>
     * {
       -webkit-font-smoothing: antialiased;
@@ -31,8 +32,6 @@
       -o-font-smoothing: antialiased;
     }
   </style>
-
-  <meta name="google-site-verification" content="h-CWJ-brnRT7gAg-yvbq3isoU1-spzdtBdJsMw6AFoc" />
 
   <!-- Google Tag Manager -->
   <script>
