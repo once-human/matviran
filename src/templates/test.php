@@ -1,5 +1,16 @@
 <!DOCTYPE html>
-<html data-wf-domain="www.usetable.ai" data-wf-page="666d9a8012932ba246bcf004" data-wf-site="666d9a8012932ba246bcefba">
+<html id="dynamic-html">
+<script>
+  const domain = atob("d3d3Lm1hdHZpcmFuLmNvbQ==");  // base64 encoded value of "www.matviran.com"
+  const page = atob("NjY2ZDlhODAxMjkzMmJhMjQ2YmNmMDA0");  // base64 encoded page ID
+  const site = atob("NjQ2ZDlhODAxMjkzMmJhMjQ2YmNlZmJh");  // base64 encoded site ID
+
+  document.getElementById("dynamic-html").setAttribute("data-wf-domain", domain);
+  document.getElementById("dynamic-html").setAttribute("data-wf-page", page);
+  document.getElementById("dynamic-html").setAttribute("data-wf-site", site);
+</script>
+
+<!-- <html data-wf-domain="www.matviran.com" data-wf-page="666d9a8012932ba246bcf004" data-wf-site="646d9a8012932ba246bcefba"> -->
 
 <head>
   <meta charset="utf-8" />
