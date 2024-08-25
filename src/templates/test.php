@@ -1,16 +1,14 @@
 <!DOCTYPE html>
 <html id="dynamic-html">
 <script>
-  const domain = atob("d3d3Lm1hdHZpcmFuLmNvbQ==");  // base64 encoded value of "www.matviran.com"
+  const domain = atob("d3d3Lm1hdHZpcmFuLmNvbQ==");  // base64 encoded domain value
   const page = atob("NjY2ZDlhODAxMjkzMmJhMjQ2YmNmMDA0");  // base64 encoded page ID
   const site = atob("NjQ2ZDlhODAxMjkzMmJhMjQ2YmNlZmJh");  // base64 encoded site ID
 
-  document.getElementById("dynamic-html").setAttribute("data-wf-domain", domain);
+  document.getElementById("dynamic-html").setAttribute("domain", domain);
   document.getElementById("dynamic-html").setAttribute("data-wf-page", page);
   document.getElementById("dynamic-html").setAttribute("data-wf-site", site);
 </script>
-
-<!-- <html data-wf-domain="www.matviran.com" data-wf-page="666d9a8012932ba246bcf004" data-wf-site="646d9a8012932ba246bcefba"> -->
 
 <head>
   <meta charset="utf-8" />
@@ -25,7 +23,7 @@
   <meta property="og:type" content="website" />
   <meta content="summary_large_image" name="twitter:card" />
   <meta content="width=device-width, initial-scale=1" name="viewport" />
-  <link href="https://cdn.prod.website-files.com/666d9a8012932ba246bcefba/css/table-staging.webflow.66d9b9195.min.css" rel="stylesheet" type="text/css" />
+  <link href="./stylesheet.min.css" rel="stylesheet" type="text/css" />
   <script type="text/javascript">
     ! function(o, c) {
       var n = c.documentElement,
