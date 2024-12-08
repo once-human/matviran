@@ -1,7 +1,15 @@
 import 'package:flutter/material.dart';
+import 'package:provider/provider.dart';
+import '../utils/theme_provider.dart';
+import 'pages/home.dart';
 
 void main() {
-  runApp(const MatviranApp());
+  runApp(
+    ChangeNotifierProvider(
+      create: (_) => ThemeProvider(),
+      child: const MatviranApp(),
+    ),
+  );
 }
 
 class MatviranApp extends StatelessWidget {
@@ -9,13 +17,12 @@ class MatviranApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    final themeProvider = Provider.of<ThemeProvider>(context);
+
     return MaterialApp(
       title: 'Matviran',
-      theme: ThemeData(useMaterial3: true, primarySwatch: Colors.green),
-      home: Scaffold(
-        appBar: AppBar(title: const Text('Welcome to Matviran')),
-        body: const Center(child: Text('Hello World!')),
-      ),
+      theme: themeProvider.currentTheme,
+      home: const HomePage(),
     );
   }
 }
